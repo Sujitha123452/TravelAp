@@ -1,0 +1,63 @@
+<div class="form-container">
+  <h2>Hotel Reservation Form</h2>
+
+  <form *ngIf="!formSubmitted" (ngSubmit)="submitForm()">
+    <label for="room">Room/Suite Type:</label>
+    <select id="room" name="room" [(ngModel)]="selectedRoom" required>
+      <option [value]="" disabled selected>Select Room/Suite Type</option>
+      <option value="Single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="mini">Mini Suite</option>
+      <option value="master">Master Room</option>
+    </select>
+
+    <label for="roomNo">Number of Room/Suite:</label>
+    <select id="roomNo" name="roomNo" [(ngModel)]="selectedRoomNo" required>
+      <option [value]="" disabled selected>Select Number of Room/Suite</option>
+      <option value="101">1</option>
+      <option value="102">2</option>
+      <option value="103">3</option>
+      <option value="104">4</option>
+    </select>
+
+    <label for="person">Number of Persons:</label>
+    <select id="person" name="person" [(ngModel)]="selectedPerson" required>
+      <option [value]="" disabled selected>Select Number of Persons</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+    <label for="children">Number of Children:</label>
+    <select id="children" name="children" [(ngModel)]="selectedChildren" required>
+      <option [value]="" disabled selected>Select Number of Children</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+
+    <label for="facilities">Restaurant facilities:</label>
+    <select id="facilities" name="facilities" [(ngModel)]="selectedFacilities" (ngModelChange)="updateTotalCost()" required>
+      <option [value]="" disabled selected>Select Restaurant facilities</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    <p>Total Cost: <span class="amt">{{ totalCost | currency:'INR' }}</span></p>
+
+
+
+    <div class="button-container">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div *ngIf="formSubmitted">
+    <h3> HOTEL BOOKING RECEIPT:</h3>
+    <p>Room/Suite Type: {{ selectedRoom }}</p>
+    <p>Number of Room/Suite: {{ selectedRoomNo }}</p>
+    <p>Number of Persons: {{ selectedPerson }}</p>
+    <p>Number of Children: {{ selectedChildren }}</p>
+    <p>Restaurant facilities: {{ selectedFacilities }}</p>
+    <p>Total Cost:{{totalCost|currency:'INR'}}</p>
+  </div>
+</div>

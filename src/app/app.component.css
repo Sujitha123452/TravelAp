@@ -1,0 +1,174 @@
+.nav {
+  display: flex;
+  background-color: #1c1d1c;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.nav h1 {
+  color: rgb(190, 190, 190);
+  margin: 0;
+  font-size: 35px;
+}
+.icon{
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav ul li {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.right {
+  color: rgb(190, 190, 190);
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 0;
+  margin-left: 590px;
+}
+.rightside {
+  color: rgb(190, 190, 190);
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.left{
+  text-align: left;
+  color: rgb(190, 190, 190);
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  align-items: flex-start;
+  margin-left: auto;
+}
+h1 a {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+select option{
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+
+.flight{
+  background-color: black;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  display: inline-block;
+  margin-top: 130px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 50px;
+  left: -3%;
+  width: 400px;
+}
+.bus{
+  background-color: black;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 400px;
+  margin-top: 220px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 50px;
+  left: -3%;
+}
+.car{
+  background-color: black;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  display: inline-block;
+  margin-top: 310px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 50px;
+  left: -3%;
+  width: 400px;
+}
+.hotel{
+  background-color: black;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  display: inline-block;
+  margin-top: 400px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  position: fixed;
+  width: 400px;
+  top: 50px;
+  left: -3%;
+}
+
+.travel-text{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.travel .travel-section {
+  text-align: center;
+  margin-bottom: 0px;
+
+}
+.box {
+  background-color: black;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  display: inline-block;
+  margin-top: 130px;
+  margin-left: 850px;
+  position: fixed;
+  top: 50px;
+  right: 0%;
+}
+
+.box .top-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.seltext {
+  font-size: 24px;
+  color: white;
+}
+
+.ans {
+  font-size: 18px;
+  text-decoration: underline;
+  color: white;
+}
+
+
+

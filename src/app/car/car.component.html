@@ -1,0 +1,39 @@
+
+<div class="form-container">
+  <h2>Car Booking Form</h2>
+
+  <form *ngIf="!formSubmitted" (ngSubmit)="submitForm()">
+    <label for="From">From</label>
+    <input type="text" id="From" name="From" [(ngModel)]="From" required>
+
+    <label for="To">To</label>
+    <input type="text" id="To" name="To" [(ngModel)]="To" required>
+
+    <label for="Depart">Depart Date</label>
+    <input type="date" id="Depart" name="Depart" [(ngModel)]="Depart" required>
+
+    <label for="Depart">Arrival Date</label>
+    <input type="date" id="Arrival" name="Arrival" [(ngModel)]="Arrival" required>
+
+    <label for="Travellers">Travellers</label>
+    <select id="Travellers" name="Travellers" [(ngModel)]="Travellers" (ngModelChange)="updateTotalCost()" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <p>Total Cost: <span class="amt">{{ totalCost | currency:'INR' }}</span></p>
+    <div class="button-container">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div *ngIf="formSubmitted">
+    <h3> CAR BOOKING RECEIPT:</h3>
+    <p>From:{{ From }}</p>
+    <p>To: {{ To }}</p>
+    <p>Depart: {{ Depart }}</p>
+    <p>Arrival: {{ Arrival }}</p>
+    <p>Travellers: {{ Travellers }}</p>
+    <p>Total Cost:{{totalCost|currency:'INR'}}</p>
+  </div>
+</div>
+
